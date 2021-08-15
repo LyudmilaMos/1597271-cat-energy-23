@@ -1,11 +1,5 @@
 /* Reason */
 
-@basic_grey: #f2f2f2;
-@special_dark-grey: #444444;
-@basic_black: #000000;
-@main-font: "Arial", "Arial", sans-serif;
-@title-font: "Oswald", "Arial", sans-serif;
-
 .reason {
   width: 280px;
   height: 100%;
@@ -14,6 +8,11 @@
   line-height: 18px;
   color: @special_dark-grey;
   margin-top: 20px;
+}
+
+.reason__wrapper ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .reason__item {
@@ -25,20 +24,24 @@
   font-family: @title-font;
   font-size: 24px;
   line-height: 37px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   color: @basic_black;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.reason-pic-1 {
-  background: url("../img/reason/pic_1.png") no-repeat 0 30px;
+.reason__title--pic-1 {
+  background-image: url("../img/reason/pic_1.png");
+  background-repeat: no-repeat;
+  background-position: 0 30px;
   padding-left: 80px;
 }
 
-.reason-pic-2 {
-  background: url("../img/reason/pic_2.png") no-repeat 0 30px;
+.reason__title--pic-2 {
+  background-image: url("../img/reason/pic_2.png");
+  background-repeat: no-repeat;
+  background-position: 0 30px;
   padding-left: 80px;
 }
 
@@ -52,20 +55,14 @@
   text-transform: uppercase;
 }
 
-@width: 24px;
-
 .reason__link::after {
   content: "";
   position: absolute;
-  width: @width;
+  width: 24px;
   height: 12px;
   background-image: url("../img/reason/icon_arrow.svg");
   background-repeat: repeat;
   background-position: 0 0;
-}
-
-.reason__link a:hover {
-  width: @width*0.75;
 }
 
 .reason__link a:active {
