@@ -1,0 +1,70 @@
+/* Reason */
+
+.reason {
+  width: 280px;
+  height: 100%;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: @special_dark-grey;
+  margin-top: 20px;
+}
+
+.reason__wrapper ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.reason__item {
+  margin-bottom: 20px;
+  background-color: @basic_grey;
+}
+
+.reason__item h3 {
+  font-family: @title-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @basic_black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.reason__title--pic-1 {
+  background-image: url("../img/reason/pic_1.png");
+  background-repeat: no-repeat;
+  background-position: 0 30px;
+  padding-left: 80px;
+}
+
+.reason__title--pic-2 {
+  background-image: url("../img/reason/pic_2.png");
+  background-repeat: no-repeat;
+  background-position: 0 30px;
+  padding-left: 80px;
+}
+
+.reason__item a {
+  font-family: @title-font;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: @basic_black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reason__link::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 12px;
+  background-image: url("../img/reason/icon_arrow.svg");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+.reason__link a:active {
+  opacity: 0.3;
+}
