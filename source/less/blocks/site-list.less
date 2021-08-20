@@ -1,5 +1,13 @@
 /* Site-list */
 
+.site-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+}
+
 .site-list__item a {
   font-family: @title-font;
   color: @basic_black;
@@ -16,4 +24,18 @@
 .site-list__item a:active {
   color: @basic_black;
   border-bottom: 2px solid @basic_green;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    width: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 478px;
+  }
 }

@@ -1,5 +1,20 @@
 /* Map */
 
 .map {
+  display: block;
   max-width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    background: url("../img/footer/map_tablet.png") 0 0 no-repeat;
+    min-width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    background: url("../img/footer/map_desktop.png") 0 0 no-repeat;
+    min-width: 1440px;
+  }
 }

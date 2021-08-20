@@ -1,0 +1,28 @@
+/* Page-footer*/
+
+@media (min-width: @tablet-width) {
+  .page-footer__equalisation {
+    min-width: 708px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    order: 3;
+  }
+
+  .page-footer__social {
+    order: 2;
+  }
+
+  .page-footer__copyright {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__equalisation {
+    min-width: 1220px;
+  }
+}

@@ -13,3 +13,34 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 709px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contacts__title {
+    width: 171px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .contacts__text {
+    width: 159px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 570px;
+    height: 207px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

@@ -15,11 +15,6 @@
   padding-left: 0;
 }
 
-.reason__item {
-  margin-bottom: 20px;
-  background-color: @basic_grey;
-}
-
 .reason__item h3 {
   font-family: @title-font;
   font-size: 24px;
@@ -31,14 +26,14 @@
   padding-bottom: 30px;
 }
 
-.reason__title--pic-1 {
+.reason__item--pic-1 {
   background-image: url("../img/reason/pic_1.png");
   background-repeat: no-repeat;
   background-position: 0 30px;
   padding-left: 80px;
 }
 
-.reason__title--pic-2 {
+.reason__item--pic-2 {
   background-image: url("../img/reason/pic_2.png");
   background-repeat: no-repeat;
   background-position: 0 30px;
@@ -67,4 +62,91 @@
 
 .reason__link a:active {
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .reason {
+    width: 709px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .reason__description {
+    width: 340px;
+    height: 96px;
+  }
+
+  .reason__item h3 {
+    padding-top: 77px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .reason__item a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .reason__link {
+    padding-bottom: 53px;
+  }
+
+  .reason__item--pic-1 {
+    background-image: url("../img/reason/pic_tablet_1.png");
+    background-repeat: no-repeat;
+    background-position: right 50%;
+  }
+
+  .reason__item--pic-2 {
+    background-image: url("../img/reason/pic_tablet_2.png");
+    background-repeat: no-repeat;
+    background-position: right 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason {
+    width: 1220px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .reason__wrapper {
+    width: 1220px;
+  }
+
+  .reason__item h3 {
+    padding-top: 77px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .reason__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .reason__item {
+    width: 570px;
+  }
+
+  .reason__item a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .reason__item--pic-1 {
+    background-image: url("../img/reason/pic_desktop_1.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .reason__item--pic-2 {
+    background-image: url("../img/reason/pic_desktop_1.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }

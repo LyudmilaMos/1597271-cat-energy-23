@@ -8,6 +8,7 @@
 }
 
 .preview__wrapper {
+  display: block;
   width: 320px;
   height: 302px;
   background-color: @basic_green-limpid;
@@ -17,8 +18,9 @@
 }
 
 .preview__image {
-  position: relative;
-  top: -50px;
+  background: url("../img/preview/cadr_1.png") 0 0 no-repeat;
+  width: 280px;
+  height: 270px;
 }
 
 .preview__title {
@@ -54,4 +56,66 @@
   background-color: @basic_green;
   color: @basic_white;
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .preview {
+    width: 709px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: @basic_black;
+  }
+
+  .preview__wrapper {
+    display: block;
+    width: 709px;
+    height: 180px;
+    background: @basic_white;
+  }
+
+  .preview__image {
+    width: 709px;
+    height: 609px;
+    background-image: url("../img/preview/card_tablet.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+  }
+
+  .preview__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
+  .preview__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .preview {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: @basic_black;
+  }
+
+  .preview__wrapper {
+    display: block;
+    width: 610px;
+    height: 694px;
+  }
+
+  .preview__image {
+    width: 709px;
+    height: 609px;
+    background: url("../img/preview/card_tablet.png") center no-repeat,
+      url("../img/preview/foto_1.png") center no-repeat,
+      @basic_green-limpid;
+  }
 }

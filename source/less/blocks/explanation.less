@@ -24,21 +24,85 @@
 }
 
 .explanation__paragraph--illustration-1 {
-  background: url("../img/explanation/illustration_1.svg") no-repeat 0 0;
+  background: url("../img/explanation/illustration_1.svg") 0 0 no-repeat;
   padding-left: 80px;
 }
 
 .explanation__paragraph--illustration-2 {
-  background: url("../img/explanation/illustration_2.svg") no-repeat 0 0;
+  background: url("../img/explanation/illustration_2.svg") 0 0 no-repeat;
   padding-left: 80px;
 }
 
 .explanation__paragraph--illustration-3 {
-  background: url("../img/explanation/illustration_3.svg") no-repeat 0 0;
+  background: url("../img/explanation/illustration_3.svg") 0 0 no-repeat;
   padding-left: 80px;
 }
 
 .explanation__paragraph--illustration-4 {
-  background: url("../img/explanation/illustration_4.svg") no-repeat 0 0;
+  background: url("../img/explanation/illustration_4.svg") 0 0 no-repeat;
   padding-left: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .explanation {
+    width: 709px;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .explanation h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .explanation__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .explanation__item {
+    width: 246px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .explanation__paragraph {
+    padding-top: 100px;
+  }
+
+  .explanation__paragraph--illustration-1 {
+    background: url("../img/explanation/illustration_tablet_1.svg") 0 0 no-repeat,
+      url("../img/explanation/illustration_tablet_5.svg") right 0 no-repeat;
+  }
+
+  .explanation__paragraph--illustration-2 {
+    background: url("../img/explanation/illustration_tablet_2.svg") no-repeat,
+      url("../img/explanation/illustration_tablet_6.svg") right 0 no-repeat;
+  }
+
+  .explanation__paragraph--illustration-3 {
+    background: url("../img/explanation/illustration_tablet_3.svg") no-repeat,
+      url("../img/explanation/illustration_tablet_7.svg") right 0 no-repeat;
+  }
+
+  .explanation__paragraph--illustration-4 {
+    background: url("../img/explanation/illustration_tablet_4.svg") no-repeat,
+      url("../img/explanation/illustration_tablet_8.svg") right 0 no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .explanation {
+    width: 1220px;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+  }
 }
