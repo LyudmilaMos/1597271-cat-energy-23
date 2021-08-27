@@ -1,5 +1,12 @@
 /* Contacts*/
 
+.contacts {
+  min-width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .contacts__title {
   font-family: @title-font;
   font-size: 16px;
@@ -7,21 +14,18 @@
   font-weight: 400;
   text-transform: uppercase;
   color: @basic_black-2;
+  width: 140px;
+  display: flex;
 }
 
 .contacts__text {
   font-size: 14px;
   line-height: 20px;
+  width: 120px;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    width: 709px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .contacts__title {
     width: 171px;
     font-size: 20px;
@@ -37,10 +41,9 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    width: 570px;
+    max-width: 570px;
     height: 207px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
+    background-color: @basic_white;
   }
 }

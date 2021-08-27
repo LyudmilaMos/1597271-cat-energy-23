@@ -1,0 +1,27 @@
+/* container-equalisation */
+
+.container-equalisation {
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .container-equalisation {
+    min-width: 708px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container-equalisation {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

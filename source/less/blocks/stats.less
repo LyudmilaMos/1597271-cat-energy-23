@@ -1,7 +1,7 @@
 /* Stats */
 
 .stats {
-  width: 280px;
+  /*width: 280px;*/
   background-color: @special_grey-1;
 }
 
@@ -44,9 +44,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .stats {
+  /*.stats {
     width: 708px;
-  }
+  }*/
 
   .stats h2 {
     font-size: 60px;
@@ -85,11 +85,15 @@
 
 @media (min-width: @desktop-width) {
   .stats {
+    margin: 0;
+  }
+
+  .stats__container {
     width: 1220px;
+    height: 462px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0;
   }
 
   .stats__list {

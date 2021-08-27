@@ -2,19 +2,24 @@
 
 .map {
   display: block;
-  max-width: 320px;
+  background: url("../img/footer/map.png") 0 70px no-repeat;
+  min-width: 280px;
+  height: 434px;
+  object-fit: cover;
 }
 
 @media (min-width: @tablet-width) {
   .map {
-    background: url("../img/footer/map_tablet.png") 0 0 no-repeat;
-    min-width: 768px;
+    background: url("../img/footer/map_tablet.png") 0 75px no-repeat;
+    min-width: 708px;
+    height: 475px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
     background: url("../img/footer/map_desktop.png") 0 0 no-repeat;
-    min-width: 1440px;
+    min-width: 708px;
+    height: 400px;
   }
 }

@@ -1,7 +1,7 @@
 /* Reason */
 
 .reason {
-  width: 280px;
+  //width: 280px;
   height: 100%;
   font-family: @main-font;
   font-size: 14px;
@@ -15,6 +15,12 @@
   padding-left: 0;
 }
 
+.reason__item {
+  background-color: @basic_grey;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 .reason__item h3 {
   font-family: @title-font;
   font-size: 24px;
@@ -22,22 +28,25 @@
   font-weight: 400;
   text-transform: uppercase;
   color: @basic_black;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 10px;
+  padding-left: 80px;
+}
+
+.reason__item p {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .reason__item--pic-1 {
   background-image: url("../img/reason/pic_1.png");
   background-repeat: no-repeat;
-  background-position: 0 30px;
-  padding-left: 80px;
+  background-position: 20px 20px;
 }
 
 .reason__item--pic-2 {
   background-image: url("../img/reason/pic_2.png");
   background-repeat: no-repeat;
-  background-position: 0 30px;
-  padding-left: 80px;
+  background-position: 20px 20px;
 }
 
 .reason__item a {
@@ -66,11 +75,16 @@
 
 @media (min-width: @tablet-width) {
   .reason {
-    width: 709px;
+    //width: 709px;
     display: flex;
     flex-direction: column;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .reason__item {
+    padding: 53px;
+    margin-bottom: 30px;
   }
 
   .reason__description {
@@ -79,9 +93,15 @@
   }
 
   .reason__item h3 {
-    padding-top: 77px;
+    padding-top: 22px;
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .reason__item p {
+    margin-top: 24px;
+    margin-bottom: 48px;
   }
 
   .reason__item a {
@@ -89,20 +109,16 @@
     line-height: 30px;
   }
 
-  .reason__link {
-    padding-bottom: 53px;
-  }
-
   .reason__item--pic-1 {
     background-image: url("../img/reason/pic_tablet_1.png");
     background-repeat: no-repeat;
-    background-position: right 50%;
+    background-position: 85% 50%;
   }
 
   .reason__item--pic-2 {
     background-image: url("../img/reason/pic_tablet_2.png");
     background-repeat: no-repeat;
-    background-position: right 50%;
+    background-position: 90% 50%;
   }
 }
 
@@ -111,10 +127,6 @@
     width: 1220px;
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .reason__wrapper {
-    width: 1220px;
   }
 
   .reason__item h3 {
@@ -126,11 +138,12 @@
   .reason__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .reason__item {
-    width: 570px;
+    width: 466px;
+    padding: 40px 52px 55px;
   }
 
   .reason__item a {
@@ -141,7 +154,7 @@
   .reason__item--pic-1 {
     background-image: url("../img/reason/pic_desktop_1.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 20px 20px;
   }
 
   .reason__item--pic-2 {
