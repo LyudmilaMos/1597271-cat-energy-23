@@ -1,0 +1,35 @@
+/* Page-footer*/
+
+.page-footer__logo {
+  margin: 0 auto;
+}
+
+.page-footer__equalisation {
+  background-color: @basic_grey;
+  padding: 39px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__equalisation {
+    padding: 57px 0;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    order: 1;
+  }
+
+  .page-footer__social {
+    order: 2;
+  }
+
+  .page-footer__copyright {
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__logo {
+    margin: 0;
+  }
+}

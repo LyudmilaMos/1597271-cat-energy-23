@@ -1,5 +1,24 @@
 /* Map */
 
 .map {
-  max-width: 320px;
+  display: block;
+  background-image: url("../img/footer/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 434px;
+  // object-fit: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    background-image: url("../img/footer/map_tablet.png");
+    min-height: 475px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    background-image: url("../img/footer/map_desktop.png");
+    min-height: 400px;
+  }
 }

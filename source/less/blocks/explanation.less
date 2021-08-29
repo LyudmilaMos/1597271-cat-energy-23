@@ -1,9 +1,10 @@
 /* Explanation */
 
 .explanation {
-  min-width: 280px;
+  //min-width: 280px;
   font-family: @main-font;
   margin-bottom: 36px;
+  height: 100%;
 }
 
 .explanation__wrapper ul {
@@ -20,25 +21,99 @@
 }
 
 .explanation__item {
-  width: 280px;
+  height: 100%;
+}
+
+.explanation__paragraph {
+  height: auto;
 }
 
 .explanation__paragraph--illustration-1 {
-  background: url("../img/explanation/illustration_1.svg") no-repeat 0 0;
+  background: url("../img/explanation/illustration_1.svg") 0 0 no-repeat;
   padding-left: 80px;
+  min-height: 80px;
 }
 
 .explanation__paragraph--illustration-2 {
-  background: url("../img/explanation/illustration_2.svg") no-repeat 0 0;
+  background: url("../img/explanation/illustration_2.svg") 0 0 no-repeat;
   padding-left: 80px;
+  min-height: 80px;
 }
 
 .explanation__paragraph--illustration-3 {
-  background: url("../img/explanation/illustration_3.svg") no-repeat 0 0;
+  background: url("../img/explanation/illustration_3.svg") 0 0 no-repeat;
   padding-left: 80px;
+  min-height: 80px;
 }
 
 .explanation__paragraph--illustration-4 {
-  background: url("../img/explanation/illustration_4.svg") no-repeat 0 0;
+  background: url("../img/explanation/illustration_4.svg") 0 0 no-repeat;
   padding-left: 80px;
+  min-height: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .explanation {
+    //width: 709px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .explanation__wrapper {
+    min-width: 708px;
+  }
+
+  .explanation h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .explanation__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .explanation__item {
+    width: 246px;
+  }
+
+  .explanation__paragraph {
+    padding-top: 100px;
+    padding-left: 0;
+  }
+
+  .explanation__paragraph--illustration-1 {
+    background: url("../img/explanation/illustration_tablet_1.svg") 0 0 no-repeat,
+      url("../img/explanation/illustration_tablet_5.svg") right 0 no-repeat;
+    min-height: 180px;
+  }
+
+  .explanation__paragraph--illustration-2 {
+    background: url("../img/explanation/illustration_tablet_2.svg") no-repeat,
+      url("../img/explanation/illustration_tablet_6.svg") right 0 no-repeat;
+    min-height: 180px;
+  }
+
+  .explanation__paragraph--illustration-3 {
+    background: url("../img/explanation/illustration_tablet_3.svg") no-repeat,
+      url("../img/explanation/illustration_tablet_7.svg") right 0 no-repeat;
+    min-height: 180px;
+  }
+
+  .explanation__paragraph--illustration-4 {
+    background: url("../img/explanation/illustration_tablet_4.svg") no-repeat,
+      url("../img/explanation/illustration_tablet_8.svg") right 0 no-repeat;
+    min-height: 180px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .explanation {
+    width: 1220px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
