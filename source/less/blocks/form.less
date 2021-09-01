@@ -1,7 +1,7 @@
 /* Form */
 
 .form {
-  width: 280px;
+  min-width: 280px;
 }
 
 .form__fieldset ul {
@@ -25,6 +25,8 @@
   line-height: 26px;
   color: @basic_black;
   text-transform: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__wrap {
@@ -33,7 +35,7 @@
 
 .form__input,
 .form__checkbox {
-  width: 100%;
+  // width: 100%;
   font-family: @title-font;
   font-size: 16px;
   line-height: 18px;
@@ -57,6 +59,7 @@
   line-height: 18px;
   color: @special_dark-grey;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .form__comments {
@@ -73,4 +76,86 @@
 
 .form__label--additionally {
   color: @basic_black;
+}
+
+.form__button {
+  min-width: 260px;
+  display: inline-block;
+  font-family: @title-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @basic_white;
+  padding: 10px;
+  background-color: @basic_green;
+  border: none;
+  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-container {
+    min-width: 668px;
+  }
+
+  .form__label,
+  .form__input,
+  .form__checkbox {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__contacts-title,
+  .form__fieldset-title {
+    width: 668px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .form__textarea {
+    height: 174px;
+  }
+
+  .form__list--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__button-container {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-container,
+  .form__contacts-wrap {
+    width: 1220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-container__wrap {
+    width: 1220px;
+  }
+
+  .form__contacts-title,
+  .form__fieldset-title {
+    width: 1220px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .form__textarea {
+    width: 1220px;
+  }
+
+  .form__button {
+    min-width: 568px;
+    height: 52px;
+  }
 }
