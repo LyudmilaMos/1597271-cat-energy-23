@@ -85,7 +85,9 @@
             </div>
           </div>
           <section class="form__contacts">
-            <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
+            <div class="container">
+              <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
+            </div>
             <div class="container form__contacts-wrap">
               <p class="form__wrap">
                 <label class="form__label" for="form__email">e-mail:<sup>*</sup></label>
@@ -96,15 +98,15 @@
                 <input class="form__input" id="form__tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
               </p>
             </div>
-              <p class="form__wrap">
+              <p class="form__wrap container">
                 <label class="form__contacts-title" for="form__text">Комментарий:</label>
               </p>
               <div class="container">
                 <textarea class="form__textarea" id="form__text" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
           </section>
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-title">Дополнительно:</legend>
+          <section class="form__fieldset">
+            <h3 class="form__fieldset-title container">Дополнительно:</h3>
             <div class="container">
               <ul class="form__list form__list--container">
                 <li class="form__item">
@@ -125,7 +127,7 @@
                 </li>
               </ul>
             </div>
-          </fieldset>
+          </section>
           <div class="container form__button-container">
             <button class="button form__button" type="submit">Отправить заявку</button>
             <p class="form__comments">* — Обязательные поля</p>
