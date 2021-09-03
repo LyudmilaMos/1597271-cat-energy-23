@@ -2,7 +2,7 @@
 
 .appointment__title {
   font-family: @title-font;
-  font-size: 36px;
+  font-size: 33px;
   line-height: 36px;
   font-weight: 400;
   color: @basic_black;
@@ -27,4 +27,25 @@
   color: @basic_black;
   align-items: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .appointment__title {
+    min-width: 668px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .appointment__paragraph {
+    min-width: 668px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .appointment__title,
+  .appointment__paragraph {
+    min-width: 1220px;
+  }
 }
