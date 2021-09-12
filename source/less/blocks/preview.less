@@ -14,8 +14,8 @@
     content: "";
     position: absolute;
     display: block;
-    bottom: 43px;
-    left: 50%;
+    bottom: 40px;
+    left: 160px;
     width: 280px;
     height: 270px;
     background-image: url("../img/preview/cadr_1.png");
@@ -27,15 +27,16 @@
 }
 
 .preview__link {
-  margin-top: 138px;
+  margin-top: 140px;
 }
 
 .preview__link a {
   display: inline-block;
-  width: 280px;
-  padding: 11px 10px;
+  width: 260px;
+  padding: 10px;
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -87,14 +88,18 @@
   line-height: 36px;
   font-weight: 400;
   z-index: 2;
+  margin: 0;
+  padding-top: 29px;
 }
 
 .preview__slogan {
   position: relative;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 14px;
   text-transform: uppercase;
   z-index: 2;
+  margin: 0;
+  padding-top: 25px;
 }
 
 @media (min-width: @tablet-width) {
@@ -110,6 +115,8 @@
     &::before {
       width: 709px;
       height: 609px;
+      top: 234px;
+      left: 383px;
       background-image: url("../img/preview/card_tablet.png");
       z-index: 1;
     }
@@ -157,8 +164,9 @@
 
   .preview__slogan {
     // position: relative;
-    // font-size: 20px;
-    // line-height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 45px;
     // text-transform: uppercase;
     // z-index: 2;
     margin-left: 87px;
@@ -166,9 +174,17 @@
 
   .preview__link {
     position: relative;
-    margin-top: 49px;
-    margin-left: 87px;
+    margin-top: 48px;
+    margin-left: 90px;
     z-index: 2;
+  }
+
+  .preview__link a {
+    width: 220px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    padding: 18px 12px;
   }
 }
 

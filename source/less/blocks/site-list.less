@@ -8,48 +8,127 @@
   margin: 0 auto;
 }
 
-.site-list__item {
-  padding: 20px 0;
-}
-
-.site-list__item a {
+.site-list a {
+  position: relative;
+  display: block;
+  padding: 22px 23px;
   font-family: @title-font;
   color: @basic_black;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  text-decoration: none;
+  background-color: @basic_white;
+  border-bottom: 1px solid #d82525;//@special_grey-2
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: none;
+    border: none;
+  }
 }
 
-.site-list__item a:hover {
+
+.site-list a:hover {
   opacity: 0.6;
 }
 
-.site-list__item a:active {
+.site-list a:active {
   color: @basic_black;
   border-bottom: 2px solid @basic_green;
+}
+
+// .site-list__item {
+//   padding: 20px 0;
+// }
+
+.site-list__item {
+  @media (min-width: @tablet-width) {
+    // padding: 32px 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 1.5px;
+        background: @basic_green-limpid;
+      }
+    }
+  }
+}
+
+.site-list__item a[href] {
+  @media (min-width: @tablet-width) {
+    &:hover {
+      color: @basic_black;
+      opacity: 0.6;
+    }
+
+    &:active {
+      color: @basic_black;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 440px;
+    padding: 0;
   }
 
-  .site-list__item a {
+  .site-list a {
     font-size: 18px;
     line-height: 24px;
+    font-weight: normal;
   }
 }
 
 @media (min-width: @desktop-width) {
   .site-list {
     width: 478px;
+    background-color: @basic_green-limpid;
   }
 
-  .site-list__item a {
+  .site-list a {
     font-size: 20px;
     line-height: 30px;
+    color: @basic_white;
+  }
+
+  .site-list__item {
+    &--active {
+      position: relative;
+
+      &::after {
+        background: @basic_white;
+      }
+    }
+  }
+
+  .site-list__item a[href] {
+    &:hover {
+      color: @basic_white;
+      opacity: 0.6;
+    }
+
+    &:active {
+      color: @basic_white;
+    }
   }
 }
