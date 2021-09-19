@@ -14,8 +14,9 @@
 .stats__list {
   margin: 0;
   display: flex;
-  justify-content: space-around;
-  padding-top: 33px;
+  justify-content: space-between;
+  margin-top: 25px;
+  flex-wrap: wrap;
 }
 
 .stats__item {
@@ -24,7 +25,13 @@
   display: flex;
   flex-direction: column;
   border: 1px solid @special_grey-4;
-  padding-left: 20px;
+  // padding-left: 20px;
+  width: 112px;
+  text-align: center;
+  align-items: center;
+  min-height: 28px;
+  position: relative;
+  padding: 12px 6px;
 }
 
 .stats h2 {
@@ -60,17 +67,25 @@
   color: @basic_black;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
-  padding-top: 30px;
+  min-width: 280px;
+  padding: 0;
+  margin-top: 35px;
+  border: none;
 }
 
 .stats__description {
   margin: 0;
-  width: 74px;
+  // width: 74px;
   // padding: 8px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: @special_grey-1;
+  padding: 0 15px;
 }
 
 @media (min-width: @tablet-width) {
@@ -81,7 +96,7 @@
   .stats h2 {
     font-size: 60px;
     line-height: 60px;
-    // padding-top: 30px;
+    padding-top: 24px;
   }
 
   .stats__header p {
@@ -102,12 +117,13 @@
   // }
 
   .stats__list {
-    padding-top: 67px;
+    margin-top: 50px;
   }
 
   .stats__item {
-    width: 162px;
-    height: 77px;
+    width: 149px;
+    padding: 17px 6px;
+    // height: 77px;
     // padding-left: 44px;
     // padding-top: 40px;
   }
@@ -119,6 +135,7 @@
   }
 
   .stats__result {
+    width: 174px;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
@@ -128,7 +145,14 @@
   .stats__description {
     font-size: 14px;
     line-height: 14px;
-    text-align: center;
+    width: 137px;
+    margin: 0;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: @basic_white;
+    padding: 0 15px;
   }
 }
 

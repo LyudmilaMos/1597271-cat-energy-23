@@ -22,8 +22,9 @@
 
 .reason__item {
   background-color: @basic_grey;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  // padding-bottom: 20px;
+  margin-bottom: 17px;
+  padding: 20px;
 }
 
 .reason__item h3 {
@@ -34,14 +35,14 @@
   text-transform: uppercase;
   color: @basic_black;
   margin: 0;
-  padding-top: 28px;
-  padding-left: 91px;
+  padding-top: 8px;
+  padding-left: 71px;
 }
 
 .reason__item p {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
-  padding: 10px 20px 20px;
+  padding-bottom: 23px;
   border-bottom: 1px solid @special_grey-4;
 }
 
@@ -57,7 +58,9 @@
   background-position: 12px 23px;
 }
 
-.reason__item a {
+.reason__link {
+  position: relative;
+  padding-right: 60px;
   font-family: @title-font;
   text-decoration: none;
   font-size: 16px;
@@ -65,26 +68,30 @@
   color: @basic_black;
   text-align: center;
   text-transform: uppercase;
-  padding-left: 19px;
-}
+  // padding-left: 19px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 21px;
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/reason/icon_arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
+    transition: all 0.3s;
+  }
 
-// .reason__link {
-//   padding-left: 19px;
-// }
+  &:hover {
+    &::after {
+      right: 0;
+      width: 32px;
+    }
+  }
 
-.reason__link::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 12px;
-  background-image: url("../img/reason/icon_arrow.svg");
-  background-repeat: repeat;
-  background-position: 0 2px;
-  left: 141px;
-}
-
-.reason__link a:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -102,7 +109,7 @@
   }
 
   .reason__item h3 {
-    padding-top: 29px;
+    padding-top: 27px;
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
@@ -116,7 +123,8 @@
   .reason__item p {
     padding: 0;
     margin-top: 25px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 18px;
     border-bottom: none;
   }
 
@@ -138,8 +146,15 @@
     background-position: 94% 56%;
   }
 
-  .reason__link::after {
-    left: 215px;
+  .reason__link-wrapper {
+    padding-top: 35px;
+  }
+
+  .reason__link {
+    &::after {
+      top: 8px;
+      right: 12px;
+    }
   }
 }
 
